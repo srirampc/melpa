@@ -608,7 +608,9 @@ Optionally PRETTY-PRINT the data."
   (apply 'process-file
          package-build-tar-executable nil
          (get-buffer-create "*package-build-checkout*")
-         nil "-cvf"
+         nil
+         "--force-local"
+         "-cvf"
          file
          "--exclude=.svn"
          "--exclude=CVS"
