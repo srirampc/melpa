@@ -119,7 +119,7 @@ function for access to this function")
   '("*.el" "*.el.in" "dir"
     "*.info" "*.texi" "*.texinfo"
     "doc/dir" "doc/*.info" "doc/*.texi" "doc/*.texinfo"
-    (:exclude ".dir-locals.el" "tests.el" "*-test.el" "*-tests.el"))
+    (:exclude ".dir-locals.el"))
   "Default value for :files attribute in recipes.")
 
 (defun pb/message (format-string &rest args)
